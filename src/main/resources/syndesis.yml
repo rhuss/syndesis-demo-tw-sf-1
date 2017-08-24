@@ -4,7 +4,7 @@ flows:
   - kind: endpoint
     uri: twitter-mention
   - kind: filter
-    expression: ${Status.text} contains 'Blub'
+    expression: ${body.text} contains 'Blub'
     steps:
     - kind: endpoint
       uri: atlas:mapping-step-3.json
